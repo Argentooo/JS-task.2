@@ -16,19 +16,16 @@ alert(myNumber);
 // 3 - Спросите имя пользователя с помощью метода prompt. Вывод сообщение на страницу с помощью document.write : “Рад знакомству {имя пользователя}!”.
 
 const name = prompt("Введите имя: ");
-document.write("Рад знакомству " + name);
+document.write("Рад знакомству " + name + "!");
 
 // 4 - Даны два числа a, b. Написанная программа, которая считает среднее арифметическое двух чисел.
 
-const avarageNumber = (firstNumber, secondNumber) => {
-  let a = firstNumber;
-  let b = secondNumber;
-  let sum;
-  sum = (a + b) / 2;
-  console.log("среднее арифметическое двух чисел: " + sum);
-};
+let a = parseInt(prompt("First Number?", ""));
+let b = parseInt(prompt("Second Number?", ""));
 
-avarageNumber(15, 45);
+let results = (a + b) / 2;
+
+document.write("среднее арифметическое двух чисел: " + results);
 
 // 5 - Спросите пользователя ввести любое число. Ваша задача вывести следующий по счету число.
 //   *Пример: Пользователь вводит число 10. Программа выводит число 11.*
